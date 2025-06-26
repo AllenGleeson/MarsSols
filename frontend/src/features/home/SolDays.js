@@ -36,7 +36,7 @@ const SolDays = ({ marsData }) => {
                   alt={`Mars Sol ${item.sol}`}
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.style.display = 'none'; // Hide the image if broken
+                    e.target.src = require('../../assets/images/no-image.webp');
                   }}
                 />
                 <div className="card-body">

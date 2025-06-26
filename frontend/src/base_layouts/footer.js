@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
-      <p>Copyrights NASA</p>
+      <p>Powered by NASA Open APIs</p>
     </footer>
   );
 };

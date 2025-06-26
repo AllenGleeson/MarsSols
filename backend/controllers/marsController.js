@@ -15,7 +15,6 @@ const CAMERA_OPTIONS = [
 ];
 
 const getImageForDate = async (earthDate) => {
-  console.log("Called getImageForDate with date:", earthDate);
   const camera = CAMERA_OPTIONS[Math.floor(Math.random() * CAMERA_OPTIONS.length)];
   const marsPhotosUrl = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?camera=${camera}&earth_date=${earthDate}&api_key=${MARS_API_KEY}`;
   try {
