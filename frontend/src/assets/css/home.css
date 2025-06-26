@@ -1,0 +1,162 @@
+#jumbotron {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F31c69a22bf720a31b994-32f3ccfb8530e413a232a033d3d1a50b.ssl.cf3.rackcdn.com%2Fopti%2Fdesktop-sol-mars-5e36d2f3e25c5.jpg&f=1&nofb=1&ipt=a08f31ac986a7607c48446482d95f953352092998ea50cf9c3ba8410c12432d8");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+#jumbotron hr {
+    color: #fffb00;
+}
+
+#marsInsight {
+    margin-top: 4rem;
+}
+
+#welcomeMessage {
+    width: 60%;
+    background-color: #05050547;
+    padding: 1rem;
+}
+
+#welcomeMessage h1 {
+    text-align: center;
+    letter-spacing: 0.7rem;
+    font-size: 3.5rem;
+    font-weight: 200;
+}
+
+#welcomeMessage p {
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+}
+
+.welcomeSection {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10rem;
+}
+
+#rover-links-section {
+    padding: 0rem 1rem 3rem 1rem;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rover-links {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.rover-links svg {
+    height: 2em;
+    margin: 0.6rem;
+    color: #fffb00;
+    border-radius: 100%;
+}
+
+.rover-links:hover svg {
+    color: #000;
+    background-color: #fffb00;
+}
+
+.rover-links p {
+    margin: 0;
+}
+
+#SolDays {
+    background-color: #ffffff24;
+    padding: 1rem;
+    margin: 0rem 0rem 3rem 0rem;
+}
+
+.season {
+    font-size: 1.22rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.season span {
+    text-transform: capitalize;
+}
+
+.season p {
+    margin: 0;
+}
+
+.card {
+    border-radius: 0;
+    border: none;
+    --bs-card-bg: none;
+    --bs-card-color: #fff;
+        max-height: 15rem;
+}
+
+.card img {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-title {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+#SolCharts .nav-link {
+    background-color: #4c4c4c87;
+    margin: 0rem 0rem 0rem 0.04rem;
+    color: #fff;
+    border-color: #ffffff45;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    transition: none !important;
+}
+
+#SolCharts .nav-link.active {
+    color: #000000;
+    background-color: #fffb00;
+}
+
+#SolCharts .nav-link:hover {
+    color: #000000;
+    background-color: #fffb00;
+}
+
+#SolCharts .nav-link.active:hover {
+    color: #00000099;
+}
+
+#SolCharts .nav-tabs {
+    border-color: #fffb00;
+}
+
+.charts {
+    min-height: 30rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.charts .btn{
+    background-color: #fffb00;
+    color: #000;
+    margin: 0rem 0rem 0rem 0.04rem;
+    border-color: #ffffff45;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    transition: none !important;
+}
+
+.charts .btn:hover{
+    background-color: #000;
+    color: #fffb00;
+}

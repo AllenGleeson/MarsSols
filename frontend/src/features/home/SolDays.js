@@ -1,0 +1,63 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSnowflake, faSeedling, faSun, faLeaf } from '@fortawesome/free-solid-svg-icons';
+
+const SolDays = ({ marsData }) => {
+  // Determine the icon based on the season
+  const getSeasonIcon = (season) => {
+    switch (season.toLowerCase()) {
+      case 'winter':
+        return faSnowflake;
+      case 'spring':
+        return faSeedling;
+      case 'summer':
+        return faSun;
+      case 'fall':
+      case 'autumn':
+        return faLeaf;
+      default:
+        return faLeaf;
+    }
+  };
+
+  const seasonIcon = getSeasonIcon(marsData.Season);
+
+  return (
+    <div>
+      <div className="row">
+        {marsData.Days
+          .filter(item => item.image && item.image.trim() !== '')
+          .map((item, index) => (
+            <div className="col-md-2 mb-4" key={index}>
+              <div className="card h-100">
+                <img
+                  src={item.image}
+                  className="card-img-top"
+                  alt={`Mars Sol ${item.sol}`}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.style.display = 'none'; // Hide the image if broken
+                  }}
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Sol Day {item.sol}</h5>
+                  <p className="card-text">Earth Date: {item.earthday}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+      </div>
+      <div className="season mt-3">
+        <p>
+          This is a Sol week. As you can see it isn't the most hospitable place to live.
+        </p>
+        <div>
+          <span>Current Season: {marsData.Season} </span>
+          <FontAwesomeIcon icon={seasonIcon} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SolDays;
