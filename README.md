@@ -15,5 +15,10 @@ Mars Sols is a node.js and express.js backend and React frontend which uses NASA
 - **Frontend:** React
 - **Styling:** Bootstrap
 
+### API Used
+- Mars Rover Photos
+- InSight: Mars Weather Service API
+- https://api.nasa.gov/
+
 ### Author
 - Allen Gleeson - allen_gleeson@hotmail.com
