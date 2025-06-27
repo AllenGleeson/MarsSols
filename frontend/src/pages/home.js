@@ -13,8 +13,13 @@ const Home = () => {
 
   useEffect(() => {
     const fetchMarsData = async () => {
+      const baseURL =
+        process.env.NODE_ENV === 'production'
+          ? ''
+          : 'http://localhost:5000';
+
       try {
-        const response = await fetch('http://localhost:5000/api/mars/');
+        const response = await fetch(`${baseURL}/api/mars/`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

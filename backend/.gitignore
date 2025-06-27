@@ -17,7 +17,6 @@ Thumbs.db
 
 # Build files
 dist/
-build/
 
 # Coverage reports
 coverage/
