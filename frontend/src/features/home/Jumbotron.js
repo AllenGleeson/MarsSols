@@ -6,7 +6,7 @@ const Jumbotron = () => {
     return (
         <div id='jumbotron'>
             <div className='welcomeSection'>
-                <div>
+                <div className='d-none d-lg-block'>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/8DZl56tS9ko?si=eh7wYc_8G5e99nNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div id='welcomeMessage'>

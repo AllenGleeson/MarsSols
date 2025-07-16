@@ -25,6 +25,7 @@
     letter-spacing: 0.7rem;
     font-size: 3.5rem;
     font-weight: 200;
+    margin: 0rem 0.25rem 0rem 0.25rem;
 }
 
 #welcomeMessage p {
@@ -36,12 +37,15 @@
     display: flex;
     justify-content: space-around;
     padding-top: 10rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
 }
 
 #rover-links-section {
     padding: 0rem 1rem 3rem 1rem;
     margin-top: 7rem;
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-around;
 }
 
@@ -93,7 +97,7 @@
     border: none;
     --bs-card-bg: none;
     --bs-card-color: #fff;
-        max-height: 15rem;
+    max-height: 15rem;
 }
 
 .card img {
@@ -146,7 +150,7 @@
     justify-content: center;
 }
 
-.charts .btn{
+.charts .btn {
     background-color: #fffb00;
     color: #000;
     margin: 0rem 0rem 0rem 0.04rem;
@@ -156,7 +160,31 @@
     transition: none !important;
 }
 
-.charts .btn:hover{
+.charts .btn:hover {
     background-color: #000;
     color: #fffb00;
+}
+
+@media (max-width: 575.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+
+@media (min-width: 1200px) {}
+
+@media (max-width: 992px) {
+    #welcomeMessage h1 {
+        letter-spacing: 0.1rem;
+        font-size: 2rem;
+    }
+    #welcomeMessage {
+        width: 100%;
+        padding: 0.8rem;
+        margin: 0rem 1rem;
+    }
 }
