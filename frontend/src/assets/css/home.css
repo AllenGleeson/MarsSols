@@ -18,6 +18,7 @@
     width: 60%;
     background-color: #05050547;
     padding: 1rem;
+    margin: 0rem 0.5rem;
 }
 
 #welcomeMessage h1 {
@@ -165,15 +166,21 @@
     color: #fffb00;
 }
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    #welcomeMessage p {
+        font-size: 1rem;
+    }
+
+    #rover-links-section {
+        padding: 0rem 0rem 1rem 0rem;
+    }
+}
 
 @media (min-width: 576px) and (max-width: 767.98px) {}
 
 @media (min-width: 768px) and (max-width: 991.98px) {}
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    
-}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
 @media (min-width: 1200px) {}
 
@@ -182,9 +189,13 @@
         letter-spacing: 0.1rem;
         font-size: 2rem;
     }
+
     #welcomeMessage {
         width: 100%;
         padding: 0.8rem;
-        margin: 0rem 1rem;
+    }
+
+    #rover-links-section {
+        margin-top: 2rem;
     }
 }
