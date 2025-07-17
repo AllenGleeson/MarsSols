@@ -81,6 +81,8 @@
 .season {
     font-size: 1.22rem;
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-between;
     margin: 1rem 0rem 0rem 0rem;
 }
@@ -93,12 +95,22 @@
     margin: 0;
 }
 
+.season svg {
+    margin-top: 0.2rem;
+}
+
+.current-season {
+    display: flex;
+    justify-content: end;
+    gap: 0.4rem;
+    width: 100%;
+}
+
 .card {
     border-radius: 0;
     border: none;
     --bs-card-bg: none;
     --bs-card-color: #fff;
-    max-height: 15rem;
 }
 
 .card img {
@@ -166,13 +178,22 @@
     color: #fffb00;
 }
 
+
 @media (max-width: 575.98px) {
     #welcomeMessage p {
         font-size: 1rem;
     }
 
+    .card-title {
+        font-size: 1rem;
+    }
+
     #rover-links-section {
-        padding: 0rem 0rem 1rem 0rem;
+        padding: 0rem 0rem 2rem 0rem;
+    }
+
+    .season {
+        font-size: 1rem;
     }
 }
 

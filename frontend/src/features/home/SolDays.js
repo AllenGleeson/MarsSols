@@ -28,7 +28,7 @@ const SolDays = ({ marsData }) => {
         {marsData.Days
           .filter(item => item.image && item.image.trim() !== '')
           .map((item, index) => (
-            <div className="col-md-2 mb-4" key={index}>
+            <div className="col-md-2" key={index}>
               <div className="card h-100">
                 <img
                   src={item.image}
@@ -49,10 +49,10 @@ const SolDays = ({ marsData }) => {
       </div>
       <div className="season mt-3">
         <p>
-          This is a Sol week. As you can see it isn't the most hospitable place to live.
+          Some pictures from the surface of mars.
         </p>
-        <div>
-          <span>Current Season: {marsData.Season} </span>
+        <div className='current-season'>
+          <span>Season: {marsData.Season} </span>
           <FontAwesomeIcon icon={seasonIcon} />
         </div>
       </div>
