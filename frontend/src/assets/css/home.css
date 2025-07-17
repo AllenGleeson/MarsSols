@@ -128,6 +128,12 @@
     font-size: 0.9rem;
 }
 
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 #SolCharts .nav-link {
     background-color: #4c4c4c87;
     margin: 0rem 0rem 0rem 0.04rem;

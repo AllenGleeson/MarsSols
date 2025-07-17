@@ -24,7 +24,7 @@ const SolDays = ({ marsData }) => {
 
   return (
     <div>
-      <div className="row">
+      <div className="days">
         {marsData.Days
           .filter(item => item.image && item.image.trim() !== '')
           .map((item, index) => (
