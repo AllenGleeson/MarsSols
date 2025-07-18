@@ -30,7 +30,7 @@ const SolCharts = ({ chartData }) => {
             className={`nav-link ${activeTab === 'windSpeedDirection' ? 'active' : ''}`}
             onClick={() => setActiveTab('windSpeedDirection')}
           >
-            WIND SPEED & DIRECTION
+            WIND
           </button>
         </li>
       </ul>
