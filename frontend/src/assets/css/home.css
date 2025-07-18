@@ -128,7 +128,7 @@
     font-size: 0.9rem;
 }
 
-.days{
+.days {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -200,6 +200,15 @@
 
     .season {
         font-size: 1rem;
+    }
+
+    #SolCharts .nav-link {
+        padding: 0.3rem;
+        font-weight: 500;
+    }
+
+    .charts .btn {
+        padding: 0.3rem;
     }
 }
 
