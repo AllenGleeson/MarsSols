@@ -32,7 +32,7 @@ header .nav-link:hover {
 @media (max-width: 575.98px) {
     .navbar-brand {
         margin-left: 0rem;
-        margin-right: 0rem;
+        margin-left: 0rem;
     }
 
     .navbar-brand img {

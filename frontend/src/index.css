@@ -15,3 +15,13 @@ footer p {
     text-align: center;
     font-weight: 600;
 }
+
+@media (max-width: 575.98px) {
+    footer p {
+        font-weight: 500;
+    }
+
+    footer {
+        margin-top: 0rem;
+    }
+}
