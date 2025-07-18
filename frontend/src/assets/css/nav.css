@@ -28,3 +28,19 @@ header .nav-link:hover {
     color: #0000003b;
     text-shadow: 0px 0px 2px #ffffff5e;
 }
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .navbar-brand img {
+        width: 5rem;
+    }
+
+    header .nav-link {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+}
