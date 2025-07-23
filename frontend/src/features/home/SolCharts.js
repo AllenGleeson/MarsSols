@@ -51,9 +51,9 @@ const SolCharts = ({ chartData }) => {
               <div className="row w-100">
                 <h5>Wind Direction</h5>
                 {Object.entries(chartData.windDirections).map(([sol, data]) => (
-                  <div className="col-4 mb-4" key={sol}>
+                  <div className="col-sm-12 col-md-4 col-lg-3" key={sol}>
                     <h6 className="text-center">Sol {sol}</h6>
-                    <div style={{ height: '300px', maxHeight: '300px' }}>
+                    <div>
                       <CompassPolarAreaChart windData={data} />
                     </div>
                   </div>
