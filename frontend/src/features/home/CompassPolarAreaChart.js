@@ -29,9 +29,9 @@ const CompassPolarAreaChart = ({ windData }) => {
         label: 'Wind Direction Frequency',
         data: counts,
         backgroundColor: [
-          '#FF6384', '#36A2EB', '#FFCE56', '#8A2BE2', '#FFA500',
-          '#00FF7F', '#FF4500', '#1E90FF', '#DA70D6', '#32CD32',
-          '#FF1493', '#40E0D0', '#FFD700', '#ADFF2F', '#FF6347', '#4682B4'
+          'rgba(255, 99, 133, 0.4)', 'rgba(54, 163, 235, 0.58)', 'rgba(255, 207, 86, 0.58)', 'rgba(137, 43, 226, 0.6)', 'rgba(255, 166, 0, 0.58)',
+          'rgba(0, 255, 127, 0.4)', 'rgba(255, 69, 0,0.4)', 'rgba(30, 144, 255,0.4)', 'rgba(218, 112, 214,0.4)', 'rgba(50, 205, 50,0.4)',
+          'rgba(255, 20, 147, 0.4)', 'rgba(64, 224, 208, 0.4)', 'rgba(255, 215, 0,0.4)', 'rgba(173, 255, 47,0.4)', 'rgba(255, 99, 71,0.4)', 'rgba(70, 130, 180,0.4)'
         ],
         borderColor: '#fff',
         borderWidth: 0,
