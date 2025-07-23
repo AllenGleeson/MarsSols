@@ -25,7 +25,7 @@ const MarsWindPressureChart = ({ solsData }) => {
     labels,
     datasets: [
       {
-        label: 'Min Pressure',
+        label: 'Min',
         data: solsData.map(day => day.mn),
         backgroundColor: 'rgba(255, 99, 132, 0.6)',
         borderColor: 'rgba(255, 99, 132, 1)',
@@ -33,7 +33,7 @@ const MarsWindPressureChart = ({ solsData }) => {
         borderRadius: 4,
       },
       {
-        label: 'Average Pressure',
+        label: 'Avg',
         data: solsData.map(day => day.av),
         backgroundColor: 'rgba(54, 162, 235, 0.6)',
         borderColor: 'rgba(54, 162, 235, 1)',
@@ -41,7 +41,7 @@ const MarsWindPressureChart = ({ solsData }) => {
         borderRadius: 4,
       },
       {
-        label: 'Max Pressure',
+        label: 'Max',
         data: solsData.map(day => day.mx),
         backgroundColor: 'rgba(75, 192, 192, 0.6)',
         borderColor: 'rgba(75, 192, 192, 1)',

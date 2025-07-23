@@ -31,7 +31,7 @@ const MarsTemperatureChart = ({ solsData }) => {
     labels,
     datasets: [
       {
-        label: `Min Temp (°${unit})`,
+        label: `Min (°${unit})`,
         data: solsData.map(day => formatTemp(day.mn)),
         borderColor: 'rgba(255, 99, 132, 1)',
         backgroundColor: 'rgba(255, 99, 132, 1)',
@@ -40,7 +40,7 @@ const MarsTemperatureChart = ({ solsData }) => {
         fill: false,
       },
       {
-        label: `Avg Temp (°${unit})`,
+        label: `Avg (°${unit})`,
         data: solsData.map(day => formatTemp(day.av)),
         borderColor: 'rgba(54, 162, 235, 1)',
         backgroundColor: 'rgba(54, 162, 235, 1)',
@@ -49,7 +49,7 @@ const MarsTemperatureChart = ({ solsData }) => {
         fill: false,
       },
       {
-        label: `Max Temp (°${unit})`,
+        label: `Max (°${unit})`,
         data: solsData.map(day => formatTemp(day.mx)),
         borderColor: 'rgba(255, 206, 86, 1)',
         backgroundColor: 'rgba(255, 206, 86, 1)',

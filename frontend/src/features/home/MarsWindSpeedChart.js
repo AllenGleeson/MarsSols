@@ -26,7 +26,7 @@ const MarswindSpeedChart = ({ windSpeed }) => {
     labels,
     datasets: [
       {
-        label: 'Min Wind Speed (m/s)',
+        label: 'Min (m/s)',
         data: windSpeed.map(day => day.mn),
         backgroundColor: 'rgba(54, 162, 235, 0.7)',
         borderColor: 'rgba(54, 162, 235, 1)',
@@ -34,7 +34,7 @@ const MarswindSpeedChart = ({ windSpeed }) => {
         borderRadius: 4,
       },
       {
-        label: 'Avg Wind Speed (m/s)',
+        label: 'Avg (m/s)',
         data: windSpeed.map(day => day.av),
         backgroundColor: 'rgba(75, 192, 192, 0.7)',
         borderColor: 'rgba(75, 192, 192, 1)',
@@ -42,7 +42,7 @@ const MarswindSpeedChart = ({ windSpeed }) => {
         borderRadius: 4,
       },
       {
-        label: 'Max Wind Speed (m/s)',
+        label: 'Max (m/s)',
         data: windSpeed.map(day => day.mx),
         backgroundColor: 'rgba(255, 99, 132, 0.7)',
         borderColor: 'rgba(255, 99, 132, 1)',
