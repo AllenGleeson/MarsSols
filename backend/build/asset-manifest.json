@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d08a92a.css",
-    "main.js": "/static/js/main.762e99b8.js",
+    "main.css": "/static/css/main.0547613e.css",
+    "main.js": "/static/js/main.76799f14.js",
     "static/media/mars-jumbotron.webp": "/static/media/mars-jumbotron.6e3f1118bd5a9cac2cb8.webp",
     "static/media/logo.webp": "/static/media/logo.ada7975b0c681e6fa68a.webp",
     "static/media/no-image.webp": "/static/media/no-image.794de3c7f6236a468cc4.webp",
     "index.html": "/index.html",
-    "main.5d08a92a.css.map": "/static/css/main.5d08a92a.css.map",
-    "main.762e99b8.js.map": "/static/js/main.762e99b8.js.map"
+    "main.0547613e.css.map": "/static/css/main.0547613e.css.map",
+    "main.76799f14.js.map": "/static/js/main.76799f14.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d08a92a.css",
-    "static/js/main.762e99b8.js"
+    "static/css/main.0547613e.css",
+    "static/js/main.76799f14.js"
   ]
 }
