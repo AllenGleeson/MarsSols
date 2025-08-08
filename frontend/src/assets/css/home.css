@@ -205,10 +205,15 @@
     #SolCharts .nav-link {
         padding: 0.3rem;
         font-weight: 500;
+        font-size: 0.8rem;
     }
 
     .charts .btn {
         padding: 0.3rem;
+    }
+
+    .card img {
+        max-height: 15rem;
     }
 }
 

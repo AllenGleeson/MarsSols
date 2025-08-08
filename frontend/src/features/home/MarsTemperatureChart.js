@@ -111,7 +111,9 @@ const MarsTemperatureChart = ({ solsData }) => {
       <button onClick={toggleUnit} className="btn btn-secondary mb-3">
         Show in °{unit === 'F' ? 'C' : 'F'}
       </button>
-      <Line data={data} options={options} />
+      <div style={{ minHeight: '300px' }}>
+        <Line data={data} options={options} />
+      </div>
     </div>
   );
 };

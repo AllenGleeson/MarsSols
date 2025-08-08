@@ -97,7 +97,7 @@ const MarswindSpeedChart = ({ windSpeed }) => {
     },
   };
 
-  return <Bar data={data} options={options} />;
+  return <div style={{ minHeight: '300px' }}><Bar data={data} options={options} /></div>;
 };
 
 export default MarswindSpeedChart;
