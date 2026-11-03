@@ -1,37 +1,27 @@
-import React,{ useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from './header';
 import Footer from './footer';
 import BackToTop from '../components/BackToTop';
 import '../assets/css/backToTop.css'
 
-export default function RootLayout(props) {
-  const [showComponent, setShowComponent] = useState(false);
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+export default function RootLayout() {
+  const [scrolled, setScrolled] = useState(false);
 
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-    if (scrollY > 20) {
-      setShowComponent(true);
-    } else {
-      setShowComponent(false);
-    }
-  };
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className='root-layout'>
-      <Header />
+      <Header scrolled={scrolled} />
       <main>
         <Outlet />
       </main>
-      {showComponent && (
-          <BackToTop />
-      )}
+      {scrolled && <BackToTop />}
       <Footer />
     </div>
   );

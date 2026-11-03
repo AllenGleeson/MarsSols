@@ -1,64 +1,97 @@
 import React, { useState } from 'react';
-import MarsTemperatureChart from './MarsTemperatureChart';
-import MarsWindPressureChart from './MarsWindPressureChart';
-import CompassPolarAreaChart from './CompassPolarAreaChart';
-import MarsWindSpeedChart from './MarsWindSpeedChart';
+import './chartTheme';
+import RangeChart from './RangeChart';
+import WindRose from './WindRose';
+
+const toCelsius = (f) => ((f - 32) * 5) / 9;
+
+const TABS = [
+  { id: 'temperature', label: 'TEMPERATURE' },
+  { id: 'pressure', label: 'PRESSURE' },
+  { id: 'wind', label: 'WIND' },
+];
 
 const SolCharts = ({ chartData }) => {
   const [activeTab, setActiveTab] = useState('temperature');
+  const [unit, setUnit] = useState('°C');
+  const sols = Object.keys(chartData.windDirections);
+  const [windSol, setWindSol] = useState(sols[sols.length - 1]);
+
   return (
     <div>
-      <ul className="nav nav-tabs">
-        <li className="nav-item">
-          <button
-            className={`nav-link ${activeTab === 'temperature' ? 'active' : ''}`}
-            onClick={() => setActiveTab('temperature')}
-          >
-            TEMPERATURE
-          </button>
-        </li>
-        <li className="nav-item">
-          <button
-            className={`nav-link ${activeTab === 'windPressure' ? 'active' : ''}`}
-            onClick={() => setActiveTab('windPressure')}
-          >
-            PRESSURE
-          </button>
-        </li>
-        <li className="nav-item">
-          <button
-            className={`nav-link ${activeTab === 'windSpeedDirection' ? 'active' : ''}`}
-            onClick={() => setActiveTab('windSpeedDirection')}
-          >
-            WIND
-          </button>
-        </li>
+      <h2 className="section-title">Weather at Elysium Planitia</h2>
+      <ul className="nav nav-tabs" role="tablist">
+        {TABS.map((tab) => (
+          <li className="nav-item" key={tab.id}>
+            <button
+              className={`nav-link ${activeTab === tab.id ? 'active' : ''}`}
+              role="tab"
+              aria-selected={activeTab === tab.id}
+              onClick={() => setActiveTab(tab.id)}
+            >
+              {tab.label}
+            </button>
+          </li>
+        ))}
       </ul>
-      <div className="charts mt-4">
+
+      <div className="charts">
         {activeTab === 'temperature' && (
-          <MarsTemperatureChart solsData={chartData.temperature} />
-        )}
-        {activeTab === 'windPressure' && (
-          <MarsWindPressureChart solsData={chartData.pressure} />
-        )}
-        {activeTab === 'windSpeedDirection' && (
-          <div className="row">
-            <div className="col-12">
-              <h5>Wind Speed</h5>
-              <MarsWindSpeedChart windSpeed={chartData.windSpeed} />
-            </div>
-            <div className="col-12">
-              <div className="row w-100">
-                <h5>Wind Direction</h5>
-                {Object.entries(chartData.windDirections).map(([sol, data]) => (
-                  <div className="col-sm-12 col-md-4 col-lg-3" key={sol}>
-                    <h6 className="text-center">Sol {sol}</h6>
-                    <div>
-                      <CompassPolarAreaChart windData={data} />
-                    </div>
-                  </div>
+          <>
+            <div className="chart-toolbar">
+              <p className="chart-note">Air temperature for each sol.</p>
+              <div className="btn-group" role="group" aria-label="Temperature unit">
+                {['°C', '°F'].map((u) => (
+                  <button
+                    key={u}
+                    className={`btn btn-sm ${unit === u ? 'active' : ''}`}
+                    aria-pressed={unit === u}
+                    onClick={() => setUnit(u)}
+                  >
+                    {u}
+                  </button>
                 ))}
               </div>
+            </div>
+            <RangeChart
+              rows={chartData.temperature}
+              unit={unit}
+              axisLabel="Temperature"
+              convert={unit === '°C' ? toCelsius : undefined}
+            />
+          </>
+        )}
+
+        {activeTab === 'pressure' && (
+          <>
+            <p className="chart-note">
+              Atmospheric pressure in pascals. Earth's air pressure at sea level is about 101,000 Pa, over 100 times more.
+            </p>
+            <RangeChart rows={chartData.pressure} unit="Pa" axisLabel="Pressure" />
+          </>
+        )}
+
+        {activeTab === 'wind' && (
+          <div className="wind-layout">
+            <div>
+              <h3 className="chart-heading">Wind speed</h3>
+              <RangeChart rows={chartData.windSpeed} unit="m/s" axisLabel="Wind speed" />
+            </div>
+            <div>
+              <h3 className="chart-heading">Wind direction</h3>
+              <div className="sol-picker" role="group" aria-label="Choose a sol">
+                {sols.map((sol) => (
+                  <button
+                    key={sol}
+                    className={`btn btn-sm ${windSol === sol ? 'active' : ''}`}
+                    aria-pressed={windSol === sol}
+                    onClick={() => setWindSol(sol)}
+                  >
+                    Sol {sol}
+                  </button>
+                ))}
+              </div>
+              <WindRose windData={chartData.windDirections[windSol]} />
             </div>
           </div>
         )}

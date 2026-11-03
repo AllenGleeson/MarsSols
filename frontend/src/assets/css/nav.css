@@ -1,5 +1,19 @@
+header {
+    transition: background-color 0.25s, box-shadow 0.25s;
+}
+
+/* Solid background once the page scrolls, so the menu stays readable over content. */
+header.scrolled {
+    background-color: rgba(20, 20, 20, 0.92);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
 nav {
     height: 6rem;
+}
+
+header.scrolled nav {
+    height: 4.5rem;
 }
 
 .navbar-brand {
@@ -8,6 +22,11 @@ nav {
 
 .navbar-brand img {
     width: 8rem;
+    transition: width 0.25s;
+}
+
+header.scrolled .navbar-brand img {
+    width: 6rem;
 }
 
 header .nav-item {
@@ -24,19 +43,24 @@ header .nav-link {
     transition: none !important;
 }
 
-header .nav-link:hover {
-    color: #0000003b;
-    text-shadow: 0px 0px 2px #ffffff5e;
+header .nav-link:hover,
+header .nav-link:focus-visible {
+    color: #fffb00;
 }
 
 @media (max-width: 575.98px) {
     .navbar-brand {
         margin-left: 0rem;
-        margin-left: 0rem;
     }
 
-    .navbar-brand img {
+    .navbar-brand img,
+    header.scrolled .navbar-brand img {
         width: 5rem;
+    }
+
+    nav,
+    header.scrolled nav {
+        height: 4rem;
     }
 
     header .nav-link {

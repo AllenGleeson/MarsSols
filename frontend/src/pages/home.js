@@ -3,6 +3,7 @@ import '../assets/css/home.css';
 import Jumbotron from '../features/home/Jumbotron';
 import SolDays from '../features/home/SolDays';
 import SolCharts from '../features/home/SolCharts';
+import LatestReadings from '../features/home/LatestReadings';
 import Loading from '../components/loading';
 import ErrorMessage from '../components/error';
 
@@ -40,6 +41,7 @@ const Home = () => {
         <ErrorMessage />
       ) : (
         <div id="marsInsight" className="container">
+          <LatestReadings marsData={marsData} />
           <div id="SolDays">
             <SolDays marsData={marsData.solDays} />
           </div>

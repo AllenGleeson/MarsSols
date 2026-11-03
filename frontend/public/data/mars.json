@@ -3,36 +3,43 @@
     "Days": [
       {
         "sol": 675,
+        "earthDate": "2020-10-19",
         "earthday": "19/10/2020",
         "image": "https://mars.nasa.gov/msl-raw-images/msss/02916/mcam/2916MR0152120341300540C00_DXXX.jpg"
       },
       {
         "sol": 676,
+        "earthDate": "2020-10-20",
         "earthday": "20/10/2020",
         "image": "https://mars.nasa.gov/msl-raw-images/msss/02917/mcam/2917MR0152150001300567C00_DXXX.jpg"
       },
       {
         "sol": 677,
+        "earthDate": "2020-10-21",
         "earthday": "21/10/2020",
         "image": "https://mars.nasa.gov/msl-raw-images/msss/02918/mcam/2918ML0152170011101918C00_DXXX.jpg"
       },
       {
         "sol": 678,
+        "earthDate": "2020-10-22",
         "earthday": "22/10/2020",
         "image": "https://mars.nasa.gov/msl-raw-images/msss/02919/mcam/2919ML0152200061101926C00_DXXX.jpg"
       },
       {
         "sol": 679,
+        "earthDate": "2020-10-23",
         "earthday": "23/10/2020",
         "image": "https://mars.nasa.gov/msl-raw-images/msss/02920/mcam/2920ML0152460001101936E01_DXXX.jpg"
       },
       {
         "sol": 680,
+        "earthDate": "2020-10-24",
         "earthday": "24/10/2020",
         "image": "https://mars.nasa.gov/msl-raw-images/msss/02921/mhli/2921MH0004240011003514C00_DXXX.jpg"
       },
       {
         "sol": 681,
+        "earthDate": "2020-10-25",
         "earthday": "25/10/2020",
         "image": "https://mars.nasa.gov/msl-raw-images/msss/02922/mcam/2922MR0152500011300603C00_DXXX.jpg"
       }

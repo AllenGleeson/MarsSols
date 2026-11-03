@@ -70,6 +70,7 @@ const main = async () => {
     solDays: {
       Days: days.map((day, i) => ({
         sol: day.sol,
+        earthDate: day.earthDate,
         earthday: new Date(`${day.earthDate}T00:00:00Z`).toLocaleDateString('en-GB', { timeZone: 'UTC' }),
         image: images[i],
       })),

@@ -1,13 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
+import VideoEmbed from '../../components/VideoEmbed'
 
 const Jumbotron = () => {
     return (
         <div id='jumbotron'>
             <div className='welcomeSection'>
-                <div className='d-none d-lg-block'>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8DZl56tS9ko?si=eh7wYc_8G5e99nNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div className='d-none d-lg-block jumbotron-video'>
+                    <VideoEmbed videoId="8DZl56tS9ko" title="Mars video from YouTube" />
                 </div>
                 <div id='welcomeMessage'>
                     <h1>The Sols Of Mars</h1>
