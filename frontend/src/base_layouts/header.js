@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className='fixed-top'>
       <Navbar id="nav">
-        <Navbar.Brand href="/">
+        <Navbar.Brand href={`${process.env.PUBLIC_URL}/`}>
           <img src={logo} alt="Logo" className="d-inline-block align-top"/>
         </Navbar.Brand>
         <NavItem>

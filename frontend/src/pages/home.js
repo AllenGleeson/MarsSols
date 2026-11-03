@@ -4,7 +4,7 @@ import Jumbotron from '../features/home/Jumbotron';
 import SolDays from '../features/home/SolDays';
 import SolCharts from '../features/home/SolCharts';
 import Loading from '../components/loading';
-import Error from '../components/error';
+import ErrorMessage from '../components/error';
 
 const Home = () => {
   const [marsData, setMarsData] = useState(null);
@@ -13,13 +13,9 @@ const Home = () => {
 
   useEffect(() => {
     const fetchMarsData = async () => {
-      const baseURL =
-        process.env.NODE_ENV === 'production'
-          ? ''
-          : 'http://localhost:5000';
-
       try {
-        const response = await fetch(`${baseURL}/api/mars/`);
+        // Data snapshot made by scripts/fetch-mars-data.mjs
+        const response = await fetch(`${process.env.PUBLIC_URL}/data/mars.json`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -41,7 +37,7 @@ const Home = () => {
       {loading ? (
         <Loading />
       ) : error ? (
-        <Error />
+        <ErrorMessage />
       ) : (
         <div id="marsInsight" className="container">
           <div id="SolDays">

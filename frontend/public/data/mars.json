@@ -1,0 +1,568 @@
+{
+  "solDays": {
+    "Days": [
+      {
+        "sol": 675,
+        "earthday": "19/10/2020",
+        "image": "https://mars.nasa.gov/msl-raw-images/msss/02916/mcam/2916MR0152120341300540C00_DXXX.jpg"
+      },
+      {
+        "sol": 676,
+        "earthday": "20/10/2020",
+        "image": "https://mars.nasa.gov/msl-raw-images/msss/02917/mcam/2917MR0152150001300567C00_DXXX.jpg"
+      },
+      {
+        "sol": 677,
+        "earthday": "21/10/2020",
+        "image": "https://mars.nasa.gov/msl-raw-images/msss/02918/mcam/2918ML0152170011101918C00_DXXX.jpg"
+      },
+      {
+        "sol": 678,
+        "earthday": "22/10/2020",
+        "image": "https://mars.nasa.gov/msl-raw-images/msss/02919/mcam/2919ML0152200061101926C00_DXXX.jpg"
+      },
+      {
+        "sol": 679,
+        "earthday": "23/10/2020",
+        "image": "https://mars.nasa.gov/msl-raw-images/msss/02920/mcam/2920ML0152460001101936E01_DXXX.jpg"
+      },
+      {
+        "sol": 680,
+        "earthday": "24/10/2020",
+        "image": "https://mars.nasa.gov/msl-raw-images/msss/02921/mhli/2921MH0004240011003514C00_DXXX.jpg"
+      },
+      {
+        "sol": 681,
+        "earthday": "25/10/2020",
+        "image": "https://mars.nasa.gov/msl-raw-images/msss/02922/mcam/2922MR0152500011300603C00_DXXX.jpg"
+      }
+    ],
+    "Season": "fall"
+  },
+  "chartData": {
+    "temperature": [
+      {
+        "sol": 675,
+        "av": -62.314,
+        "mn": -96.872,
+        "mx": -15.908
+      },
+      {
+        "sol": 676,
+        "av": -62.812,
+        "mn": -96.912,
+        "mx": -16.499
+      },
+      {
+        "sol": 677,
+        "av": -63.056,
+        "mn": -97.249,
+        "mx": -16.853
+      },
+      {
+        "sol": 678,
+        "av": -62.562,
+        "mn": -97.728,
+        "mx": -9.055
+      },
+      {
+        "sol": 679,
+        "av": -62.551,
+        "mn": -96.644,
+        "mx": -11.561
+      },
+      {
+        "sol": 680,
+        "av": -61.789,
+        "mn": -96.811,
+        "mx": -15.298
+      },
+      {
+        "sol": 681,
+        "av": -62.434,
+        "mn": -95.447,
+        "mx": -4.444
+      }
+    ],
+    "windSpeed": [
+      {
+        "sol": 675,
+        "av": 7.233,
+        "mn": 1.051,
+        "mx": 22.455
+      },
+      {
+        "sol": 676,
+        "av": 8.526,
+        "mn": 1.11,
+        "mx": 26.905
+      },
+      {
+        "sol": 677,
+        "av": 7.887,
+        "mn": 0.511,
+        "mx": 23.197
+      },
+      {
+        "sol": 678,
+        "av": 5.246,
+        "mn": 0.244,
+        "mx": 18.399
+      },
+      {
+        "sol": 679,
+        "av": 5.565,
+        "mn": 0.231,
+        "mx": 19.409000000000002
+      },
+      {
+        "sol": 680,
+        "av": 6.517,
+        "mn": 0.275,
+        "mx": 24.235
+      },
+      {
+        "sol": 681,
+        "av": 5.632,
+        "mn": 0.228,
+        "mx": 18.577
+      }
+    ],
+    "pressure": [
+      {
+        "sol": 675,
+        "av": 750.563,
+        "mn": 722.0901,
+        "mx": 768.791
+      },
+      {
+        "sol": 676,
+        "av": 749.09,
+        "mn": 722.473,
+        "mx": 767.1426
+      },
+      {
+        "sol": 677,
+        "av": 748.698,
+        "mn": 720.5873,
+        "mx": 767.4249
+      },
+      {
+        "sol": 678,
+        "av": 743.741,
+        "mn": 717.7254,
+        "mx": 760.2834
+      },
+      {
+        "sol": 679,
+        "av": 744.529,
+        "mn": 719.4178,
+        "mx": 763.2724
+      },
+      {
+        "sol": 680,
+        "av": 743.99,
+        "mn": 717.1398,
+        "mx": 764.0093
+      },
+      {
+        "sol": 681,
+        "av": 743.55,
+        "mn": 718.463,
+        "mx": 760.2244
+      }
+    ],
+    "windDirections": {
+      "675": [
+        {
+          "compass_point": "N",
+          "ct": 254
+        },
+        {
+          "compass_point": "NNE",
+          "ct": 1
+        },
+        {
+          "compass_point": "SSW",
+          "ct": 67
+        },
+        {
+          "compass_point": "SW",
+          "ct": 8618
+        },
+        {
+          "compass_point": "WSW",
+          "ct": 1912
+        },
+        {
+          "compass_point": "W",
+          "ct": 19517
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 30283
+        },
+        {
+          "compass_point": "NW",
+          "ct": 25962
+        },
+        {
+          "compass_point": "NNW",
+          "ct": 2014
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 30283
+        }
+      ],
+      "676": [
+        {
+          "compass_point": "N",
+          "ct": 463
+        },
+        {
+          "compass_point": "NNE",
+          "ct": 45
+        },
+        {
+          "compass_point": "NE",
+          "ct": 4
+        },
+        {
+          "compass_point": "ESE",
+          "ct": 2
+        },
+        {
+          "compass_point": "SW",
+          "ct": 2749
+        },
+        {
+          "compass_point": "WSW",
+          "ct": 4862
+        },
+        {
+          "compass_point": "W",
+          "ct": 20685
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 31167
+        },
+        {
+          "compass_point": "NW",
+          "ct": 25783
+        },
+        {
+          "compass_point": "NNW",
+          "ct": 2490
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 31167
+        }
+      ],
+      "677": [
+        {
+          "compass_point": "N",
+          "ct": 511
+        },
+        {
+          "compass_point": "NNE",
+          "ct": 12
+        },
+        {
+          "compass_point": "NE",
+          "ct": 1
+        },
+        {
+          "compass_point": "ESE",
+          "ct": 3
+        },
+        {
+          "compass_point": "SW",
+          "ct": 3083
+        },
+        {
+          "compass_point": "WSW",
+          "ct": 3370
+        },
+        {
+          "compass_point": "W",
+          "ct": 19454
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 34749
+        },
+        {
+          "compass_point": "NW",
+          "ct": 24014
+        },
+        {
+          "compass_point": "NNW",
+          "ct": 3413
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 34749
+        }
+      ],
+      "678": [
+        {
+          "compass_point": "N",
+          "ct": 2680
+        },
+        {
+          "compass_point": "NNE",
+          "ct": 1025
+        },
+        {
+          "compass_point": "NE",
+          "ct": 305
+        },
+        {
+          "compass_point": "ENE",
+          "ct": 31
+        },
+        {
+          "compass_point": "ESE",
+          "ct": 211
+        },
+        {
+          "compass_point": "SE",
+          "ct": 45
+        },
+        {
+          "compass_point": "SSE",
+          "ct": 174
+        },
+        {
+          "compass_point": "S",
+          "ct": 437
+        },
+        {
+          "compass_point": "SSW",
+          "ct": 861
+        },
+        {
+          "compass_point": "SW",
+          "ct": 10492
+        },
+        {
+          "compass_point": "WSW",
+          "ct": 3499
+        },
+        {
+          "compass_point": "W",
+          "ct": 22094
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 26617
+        },
+        {
+          "compass_point": "NW",
+          "ct": 14104
+        },
+        {
+          "compass_point": "NNW",
+          "ct": 4388
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 26617
+        }
+      ],
+      "679": [
+        {
+          "compass_point": "N",
+          "ct": 2049
+        },
+        {
+          "compass_point": "NNE",
+          "ct": 657
+        },
+        {
+          "compass_point": "NE",
+          "ct": 83
+        },
+        {
+          "compass_point": "ENE",
+          "ct": 17
+        },
+        {
+          "compass_point": "ESE",
+          "ct": 138
+        },
+        {
+          "compass_point": "SE",
+          "ct": 11
+        },
+        {
+          "compass_point": "SSE",
+          "ct": 137
+        },
+        {
+          "compass_point": "S",
+          "ct": 410
+        },
+        {
+          "compass_point": "SSW",
+          "ct": 909
+        },
+        {
+          "compass_point": "SW",
+          "ct": 11924
+        },
+        {
+          "compass_point": "WSW",
+          "ct": 1379
+        },
+        {
+          "compass_point": "W",
+          "ct": 21329
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 28774
+        },
+        {
+          "compass_point": "NW",
+          "ct": 15570
+        },
+        {
+          "compass_point": "NNW",
+          "ct": 3784
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 28774
+        }
+      ],
+      "680": [
+        {
+          "compass_point": "N",
+          "ct": 1033
+        },
+        {
+          "compass_point": "NNE",
+          "ct": 133
+        },
+        {
+          "compass_point": "ESE",
+          "ct": 10
+        },
+        {
+          "compass_point": "SE",
+          "ct": 6
+        },
+        {
+          "compass_point": "SSE",
+          "ct": 23
+        },
+        {
+          "compass_point": "S",
+          "ct": 76
+        },
+        {
+          "compass_point": "SSW",
+          "ct": 176
+        },
+        {
+          "compass_point": "SW",
+          "ct": 6463
+        },
+        {
+          "compass_point": "WSW",
+          "ct": 2556
+        },
+        {
+          "compass_point": "W",
+          "ct": 21280
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 34787
+        },
+        {
+          "compass_point": "NW",
+          "ct": 18673
+        },
+        {
+          "compass_point": "NNW",
+          "ct": 3262
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 34787
+        }
+      ],
+      "681": [
+        {
+          "compass_point": "N",
+          "ct": 1872
+        },
+        {
+          "compass_point": "NNE",
+          "ct": 881
+        },
+        {
+          "compass_point": "NE",
+          "ct": 201
+        },
+        {
+          "compass_point": "ENE",
+          "ct": 57
+        },
+        {
+          "compass_point": "ESE",
+          "ct": 129
+        },
+        {
+          "compass_point": "SE",
+          "ct": 17
+        },
+        {
+          "compass_point": "SSE",
+          "ct": 112
+        },
+        {
+          "compass_point": "S",
+          "ct": 387
+        },
+        {
+          "compass_point": "SSW",
+          "ct": 489
+        },
+        {
+          "compass_point": "SW",
+          "ct": 12182
+        },
+        {
+          "compass_point": "WSW",
+          "ct": 1249
+        },
+        {
+          "compass_point": "W",
+          "ct": 22409
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 27816
+        },
+        {
+          "compass_point": "NW",
+          "ct": 15971
+        },
+        {
+          "compass_point": "NNW",
+          "ct": 3412
+        },
+        {
+          "compass_point": "WNW",
+          "ct": 27816
+        }
+      ]
+    }
+  }
+}

@@ -5,7 +5,7 @@ import RootLayout from './base_layouts/root_layout'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<RootLayout />}>
             <Route path="/" element={<Home />} />
